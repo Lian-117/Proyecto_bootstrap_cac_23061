@@ -1,0 +1,229 @@
+
+/*                  CSS VERSION BOOTSTRAP MOBILE FIRST 
+        CON RESOLUCION DE REFERENCIA DE 412x914 (SAMSUNG GALAXY A51/71)
+              ¡¡¡ MEDIA QUERY A PARTIR DE LA LINEA 150 !!!
+*/
+
+* {
+    padding: 0 0;
+    margin: 0 0;
+}
+
+/*------LOGO Y NAVEGACION------*/
+
+.logo {
+    width: 80px;
+}
+.navbar-brand {
+    
+    height: 100%;
+    width: 20%;
+}
+#navbarNav {
+    justify-content: end;
+}
+
+.buy-tickets {
+    color: rgb(7, 172, 7) !important;
+}
+
+.buy-tickets:hover {
+    filter: brightness(6);
+}
+.row {
+    --bs-gutter-x: 0; 
+ }
+/*------LA CONFERENCIA------*/
+
+#LaConferencia {
+    height: auto;
+}
+
+.carousel-img {
+    height: 85vh;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+.carousel-caption {
+    bottom: 0;
+    font-size: 22px; 
+}
+
+/*------LOS ORADORES------*/
+
+.card-body {
+    align-items: start;
+    text-align: start;
+}
+
+.card-tags {
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.js-txt {
+    border: 0px solid;
+    border-radius: 6px;
+    background-color: rgb(247, 222, 3);
+    font-size: 15px;
+    margin: 4px;
+    padding: 2px 2px;
+}
+
+
+
+.react-txt {
+    color: white;
+    border: 0px solid;
+    border-radius: 6px;
+    background-color: rgb(101, 165, 218);
+    font-size: 15px;
+    margin: 4px;
+    padding: 2px 2px;
+}
+.business-txt {
+    color: rgb(255, 255, 255);
+    border: 0px solid;
+    border-radius: 6px;
+    background-color: rgb(80, 80, 79);
+    font-size: 15px;
+    margin: 4px;
+    padding: 2px 2px;;
+}
+
+.startups-txt {
+    color: rgb(255, 255, 255);
+    border: 0px solid;
+    border-radius: 6px;
+    background-color: rgb(230, 29, 29);
+    font-size: 15px;
+    margin: 4px;
+    padding: 2px 2px;;
+}
+
+.text-dotted {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+/*------LUGAR Y FECHA------*/
+
+#LugarYFecha {
+    height: 40%;
+}
+
+.lugar-fecha-slide {
+  width: 100%;
+  height: 250px !important;
+  object-fit: cover !important;
+}
+.form-control {
+    height: 50px;
+}
+
+.btn-success {
+    background-color: rgb(7, 172, 7);
+}
+
+#TalkAbout {
+    height: 100px;
+}
+
+
+
+Footer {
+    background: rgb(0,16,70);
+    background: linear-gradient(90deg, rgba(0,16,70,1) 0%, rgba(0,27,61,1) 52%, rgba(15,73,84,1) 100%);
+}
+
+.footer-link {
+    text-decoration: none;
+    color: white;
+}
+
+/*------MEDIA QUERY DESKTOP RESOLUCION ARRIBA DE LOS 992PX 
+        (USADO UN MONITOR DE 1366x768)------*/
+
+@media (min-width: 992px) {
+    
+    /*------Este esta un poco desordenado...------*/
+    .logo {
+        height: 100%;
+        
+    }
+    .lugar-conferencia {
+        text-align: start !important;
+    }
+
+    #Footer {
+        height: 12vh;
+        font-size: initial;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0 0;
+    }
+    .conferencia-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .carousel-caption {
+        right: 5%;
+        text-align: end;
+        padding-bottom: 5%;
+        
+    }
+    .carousel-caption p {
+        right: 20px;
+        font-size: 1.2rem;
+        
+       
+        
+    }
+    .lugar-fecha-slide {
+        width: 100%;
+        height: 400px !important;
+        object-fit: cover !important;
+      }
+    .introd-container {
+        display: flex;
+        justify-content: end;
+    }
+    .text {
+        width: 60%;
+        justify-content: end;
+        align-items: end;
+    }
+    
+    .boton {
+        font-size: 20px !important;
+    }
+
+  
+   #Name {
+    width: 63%;
+    margin-left: 195px;
+   }
+
+   #Apellido {
+    margin-left: 10px;
+    width: 63%;
+   }
+
+    .campo-textarea {
+        margin: 0 auto;
+        width: 65%;
+    }
+    #TalkAboutIndicator {
+        padding-left: 17.5%;
+        
+    }
+    .form-btn {
+        margin: 0 auto;
+        width:  65%;
+        
+    }
+}
